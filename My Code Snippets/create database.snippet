@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+<_locDefinition xmlns="urn:locstudio">
+    <_locDefault _loc="locNone" />
+    <_locTag _loc="locData">Title</_locTag>
+    <_locTag _loc="locData">Description</_locTag>
+    <_locTag _loc="locData">Author</_locTag>
+    <_locTag _loc="locData">ToolTip</_locTag>
+</_locDefinition>
+	<CodeSnippet Format="1.0.0">
+	<Header>
+	<Title>Create db</Title>
+        <Shortcut></Shortcut>
+	<Description>Creates db</Description>
+	<Author>Quan</Author>
+	<SnippetTypes>
+		<SnippetType>Expansion</SnippetType>
+	</SnippetTypes>
+	</Header>
+	<Snippet>
+		<Declarations>
+			<Literal>
+				<ID>dbname</ID>
+				<ToolTip>Name of the db</ToolTip>
+				<Default>Sample_Database</Default>
+			</Literal>
+		</Declarations>
+		<Code Language="SQL">
+			<![CDATA[create database $dbname$
+go
+use $dbname$
+$end$]]>
+		</Code>
+	</Snippet>
+	</CodeSnippet>
+</CodeSnippets>
+
